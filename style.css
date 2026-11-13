@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 64px;
+  padding: 0 clamp(12px, 4vw, 56px);
+  background: #fbf3b9;
+}
+
+.nav {
+  display: flex;
+  gap: clamp(10px, 3vw, 32px);
+}
+
+.box{
+    color: rgba(174, 19, 50, 1);
+}
+
+
+.link {
+  color: rgba(174, 19, 50, 1);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(12px, 3.4vw, 15px);
+  white-space: nowrap;
+}
+
+
+.logo {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(174, 19, 50, 1);
+}
+
+.link {
+  margin: 0;
+}
+
+.cart {
+  justify-self: end;
+}
+.cart-img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.order-guide {
+  max-width: 1216px;
+  margin: 80px auto 0;
+  padding: 0 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.order-guide__headline {
+  margin: 0 0 20px;
+  font-size: clamp(24px, 4vw, 44px);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.order-guide__intro {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.order-guide {
+  max-width: 1216px;
+  margin: 80px auto 0;
+  padding: 0 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.order-guide__headline {
+  margin: 0 0 20px;
+  font-size: clamp(24px, 4vw, 44px);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.order-guide__intro {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.order-guide__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.step-tile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 24px;
+  background-color: #fdf6d0;
+  border-radius: 24px;
+  text-align: left;
+}
+
+.step-tile__button {
+  flex-shrink: 0;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 999px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.step-tile__button--cherry { background-color: rgba(174, 19, 50, 1); 
+}
+.step-tile__button--olive  { background-color: rgba(161, 200, 100, 1); 
+}
+.step-tile__button--amber  { background-color: rgba(245, 206, 19, 1); 
+}
+
+.step-tile__hint {
+  margin: 0;
+  color: #5a4a3a;
+  font-size: 14px;
+  line-height: 1.4;
+}
